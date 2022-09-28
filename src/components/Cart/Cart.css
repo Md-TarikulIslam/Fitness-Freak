@@ -2,3 +2,33 @@
     position: sticky;
     top: 0;
 }
+.details{
+    text-align: left;
+    margin-left: 10px;
+}
+.time {
+    background-color: white;
+    padding: 10px;
+    margin:0 10px 0 10px;
+    border-radius: 5px;
+
+}
+.break{
+    background-color: white;
+    padding: 10px;
+    margin:0 10px 0 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.btn-activity{
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 0 78px;
+    border: none;
+}
+.btn-activity:hover{
+    background-color: rgb(7, 100, 131);
+}

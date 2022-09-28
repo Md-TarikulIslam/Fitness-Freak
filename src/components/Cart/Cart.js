@@ -9,9 +9,12 @@ const Cart = ({ cart }) => {
     }
     return (
         <div className='cart'>
+            <h2>Add a break</h2>
+            <button>20</button>
             <h2>Exercise details</h2>
             <p>Selected {cart.length}</p>
             <p>Exercise Time: {total}</p>
+            <p>Break Time: </p>
         </div>
     );
 };

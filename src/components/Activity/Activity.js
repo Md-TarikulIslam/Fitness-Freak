@@ -3,6 +3,7 @@ import './Activity.css'
 
 const Activity = (props) => {
     // console.log(props.activity)
+
     const { picture, age, time, name, about } = props.activity;
     return (
         <div className='activity'>
@@ -13,7 +14,7 @@ const Activity = (props) => {
                 <p>For Age: {age}</p>
                 <p>Time required: {time}s</p>
             </div>
-            <button className='btn-list'>
+            <button onClick={() => props.buttonClick(props.activity)} className='btn-list'>
                 <p>Add to list</p>
             </button>
         </div>

@@ -8,7 +8,11 @@ const Activities = () => {
         fetch('activities.json')
             .then(res => res.json())
             .then(data => setActivities(data))
-    }, [])
+    }, []);
+
+    const buttonClick = (activity) => {
+        console.log("Clicked");
+    }
 
     return (
         <div className='container'>
@@ -17,6 +21,7 @@ const Activities = () => {
                     activities.map(activity => <Activity
                         key={activity.id}
                         activity={activity}
+                        buttonClick={buttonClick}
                     ></Activity>
                     )
                 }

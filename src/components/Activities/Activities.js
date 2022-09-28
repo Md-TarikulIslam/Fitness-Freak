@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Activity from '../Activity/Activity';
+import Cart from '../Cart/Cart';
 import './Activities.css'
 
 const Activities = () => {
     const [activities, setActivities] = useState([]);
+    const [cart, setCart] = useState([]);
     useEffect(() => {
         fetch('activities.json')
             .then(res => res.json())
@@ -11,7 +13,9 @@ const Activities = () => {
     }, []);
 
     const buttonClick = (activity) => {
-        console.log("Clicked");
+        console.log(activity);
+        const newCart = [...cart, activity];
+        setCart(newCart);
     }
 
     return (
@@ -27,8 +31,8 @@ const Activities = () => {
                 }
 
             </div>
-            <div className="side-container">
-                <h2>there</h2>
+            <div className="cart-container">
+                <Cart cart={cart}></Cart>
             </div>
         </div>
     );

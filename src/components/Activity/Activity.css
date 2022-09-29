@@ -4,6 +4,8 @@
     margin-left: 50px;
     margin-bottom: 50px;
     position: relative;
+    height: 500px;
+    background-color: white;
     
 }
 
@@ -21,13 +23,16 @@
 
 .btn-list{
     width: 100%;
-    background-color: lightblue;
+    background-color: rgb(108, 108, 204);
     border: none;
     border-radius: 10px;
     position: absolute;
     bottom: 0;
     display: flex;
     justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
 }
 .btn-list:hover{
     background-color: blue;

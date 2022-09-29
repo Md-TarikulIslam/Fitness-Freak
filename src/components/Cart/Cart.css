@@ -1,6 +1,17 @@
 .cart{
     position: sticky;
     top: 0;
+    background-color: rgb(114, 114, 244);
+}
+.name{
+    margin-top: 50px;
+}
+.personal-status{
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    margin:  10px;
+    border-radius:10px;
 }
 .details{
     text-align: left;
@@ -20,12 +31,27 @@
     border-radius: 5px;
     margin-top: 20px;
 }
+.br-div{
+    background-color: white;
+    margin: 0 10px;
+    border-radius: 5px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.br-btn{
+    border-radius: 5px;
+    background-color: lightgray;
+    border: none;
+    padding: 5px 10px;
+    font-weight: 700;
+}
 .btn-activity{
     background-color: blue;
     color: white;
     font-size: 15px;
     border-radius: 10px;
-    margin-top: 20px;
+    margin: 20px 10px;
     padding: 0 78px;
     border: none;
 }

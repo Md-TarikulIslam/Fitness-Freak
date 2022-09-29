@@ -2,4 +2,14 @@
     color: chocolate;
     text-align: left;
     margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    
+}
+.header img{
+    margin-top: 10px;
+ width: 50px;
+ height: 40px;
+    margin-right: 20px;
 }

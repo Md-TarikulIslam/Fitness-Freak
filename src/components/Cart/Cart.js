@@ -2,6 +2,7 @@ import React from 'react';
 import './Cart.css'
 import { useState } from 'react';
 import { toast } from 'react-toastify';
+import img2 from '../images/2.jpg'
 
 const Cart = ({ cart }) => {
 
@@ -19,7 +20,11 @@ const Cart = ({ cart }) => {
     return (
 
         <div className='cart'>
-            <h2 className='name'>Md. Tarikul Islam</h2>
+            <div className='details-info'>
+                <img src={img2} alt="" />
+                <h2 className='name'>Md. Tarikul Islam</h2>
+            </div>
+
             <h5>Natore, Bangladesh</h5>
             <div className='personal-status'>
                 <div>
